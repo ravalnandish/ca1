@@ -1,1 +1,3 @@
-<?php include_once("unicat/home.html"); ?>
+<?php 
+echo '<a href="unicat/home.html"> home</a>';
+?>
