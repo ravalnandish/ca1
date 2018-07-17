@@ -448,7 +448,16 @@
 
 				</div>
 			</div>
+ 
+			
+			
+			<script language="JavaScript">
 
+function formSubmitter(formTag, messageTag){
+  document.getElementById(messageTag).innerHTML = "The form has been updated.";
+  document.forms[formTag].submit();
+}
+</script>
 			<div class="counter_form">
 				<div class="row fill_height">
 					<div class="col fill_height">
@@ -463,7 +472,7 @@
 								<option>Subject</option>
 							</select>
 							<textarea class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
-							<button type="submit" class="counter_form_button">submit now</button>
+							<button type="submit" class="counter_form_button" onclick="formSubmitter('sampleform', 'message')">submit now</button>
 						</form>
 					</div>
 				</div>
