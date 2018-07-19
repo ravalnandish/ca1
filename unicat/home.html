@@ -459,8 +459,8 @@ function formSubmitter(formTag, messageTag){
 }
 	
 function myfunction(){
-	x = document.msg.pname.value;
-	
+	x = document.pmsg.pname.value;
+	shmsg = "values are" + x;
 	
 	alert(x);
 	return true;
@@ -471,7 +471,7 @@ function myfunction(){
 			<div class="counter_form">
 				<div class="row fill_height">
 					<div class="col fill_height">
-						<form name="msg" class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="/index.php" onsubmit="return myfunction()" method="post">
+						<form name="pmsg" class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="/index.php" onsubmit="return myfunction()" method="post">
 							<div class="counter_form_title">courses now</div>
 							<input name="pname" type="text" class="counter_input" placeholder="Your Name:" required="required">
 							<input name="pnumber" type="tel" class="counter_input" placeholder="Phone:" required="required">
