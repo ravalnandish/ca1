@@ -463,7 +463,12 @@ function myfunction(){
 	y = document.pmsg.pnumber.value;
 	z = document.pmsg.counter_select.value;
 	zm = document.pmsg.ptext.value
-	shmsg = "values are : " + x  + y  + z + zm;
+	 //shmsg = "values are : " + x  + y  + z + zm;
+	var shmsg = " values are :" ;
+	  shmsg += newLine;
+	  shmsg += x;
+	  shmsg += newLine;
+	  shmsg += y;
 	
 	alert(shmsg);
 	return true;
