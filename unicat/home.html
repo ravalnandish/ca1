@@ -460,6 +460,7 @@ function formSubmitter(formTag, messageTag){
 	
 function myfunction(){
 	alert("Successful");
+	return true;
 }
 	
 	
@@ -467,22 +468,22 @@ function myfunction(){
 			<div class="counter_form">
 				<div class="row fill_height">
 					<div class="col fill_height">
-						<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="#">
+						<form name="msg" class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="/index.php" onsubmit="return myfunction()" method="post">
 							<div class="counter_form_title">courses now</div>
-							<input type="text" class="counter_input" placeholder="Your Name:" required="required">
-							<input type="tel" class="counter_input" placeholder="Phone:" required="required">
+							<input name="pname" type="text" class="counter_input" placeholder="Your Name:" required="required">
+							<input name="pnumber" type="tel" class="counter_input" placeholder="Phone:" required="required">
 							<select name="counter_select" id="counter_select" class="counter_input counter_options">
 								<option>Choose Subject</option>
 								<option>Subject</option>
 								<option>Subject</option>
 								<option>Subject</option>
 							</select>
-							<textarea class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
+							<textarea name="pmsg" class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
 							<!--<input value="submit" type="button" class="counter_form_button" onclick="formSubmitter('sampleform', 'message')">submit now</input>
 						               -->
 							<button type="submit" class="counter_form_button" >submit now</button>
 						</form>
-						<button onclick="myfunction()">Try it</button>
+						
 					</div>
 				</div>
 			</div>
