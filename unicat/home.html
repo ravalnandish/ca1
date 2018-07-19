@@ -460,7 +460,10 @@ function formSubmitter(formTag, messageTag){
 	
 function myfunction(){
 	x = document.pmsg.pname.value;
-	shmsg = "values are" + x;
+	y = document.pmsg.pnumber.value;
+	z = document.pmsg.counter_select.value;
+	zm = document.pmsg.ptext.value
+	shmsg = "values are :" + newLine + x + ' ' + y + ' ' + z + ' ' + zm;
 	
 	alert(shmsg);
 	return true;
@@ -481,7 +484,7 @@ function myfunction(){
 								<option>Subject</option>
 								<option>Subject</option>
 							</select>
-							<textarea name="pmsg" class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
+							<textarea name="ptext" class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
 							<!--<input value="submit" type="button" class="counter_form_button" onclick="formSubmitter('sampleform', 'message')">submit now</input>
 						               -->
 							<button type="submit" class="counter_form_button" >submit now</button>
