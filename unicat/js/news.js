@@ -1,5 +1,5 @@
 
-$('#contact-form').submit(function(e){
+$('#newsletter_form').submit(function(e){
   
  var name = document.getElementById ('');
   
