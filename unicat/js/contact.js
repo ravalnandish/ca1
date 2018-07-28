@@ -143,7 +143,7 @@ $(document).ready(function()
 
 	function initGoogleMap()
 	{
-		var myLatlng = new google.maps.LatLng(38.877434, -77.094214);
+		var myLatlng = new google.maps.LatLng(53.341787,-6.267018);
     	var mapOptions = 
     	{
     		center: myLatlng,
@@ -341,7 +341,7 @@ $(document).ready(function()
             '<div id="siteNotice">'+
             '</div>'+
             '<div id="bodyContent">'+
-            '481-7473 Cum Rd. Yorba Linda South Carolina'+
+            '13/14 Aungier St, Dublin 2, D02 WC04'+
             '</div>'+
             '</div>';
 
@@ -353,7 +353,7 @@ $(document).ready(function()
 		var image = 'images/marker.png';
 		var marker = new google.maps.Marker(
 		{
-			position: new google.maps.LatLng(38.877434, -77.094214),
+			position: new google.maps.LatLng(53.341787,-6.267018),
 			map: map,
 			icon: image
 		});
